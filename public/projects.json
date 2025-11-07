@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Strategic GPO",
+    "category": "frontent",
+    "description": "A professional service website featuring informative articles and a fully functional contact form for client inquiries and engagement.",
+    "site": "https://strategicgpo.com/",
+    "image": "newsind.png",
+    "alt": "Strategic GPO - Consultants service website with articles and contact form"
+  },
+  {
+    "name": "Luxe Scent and Skin Haven",
+    "category": "ecommerce",
+    "description": "An elegant e-commerce website built with WooCommerce, featuring a smooth shopping experience for skincare and fragrance products.",
+    "site": "https://luxescentskinhaven.com/",
+    "image": "rq.png",
+    "alt": "Luxe Scent Skin Haven - WooCommerce e-commerce website"
+  },
+  {
+    "name": "Accent Realty",
+    "category": "frontend",
+    "description": "A professional real estate appraisal website offering expert property valuation services and trusted real estate guidance in Pittsburgh.",
+    "site": "https://accentrealty.com/",
+    "image": "accent.png",
+    "alt": "Accent Realty Pittsburgh real estate appraisal website"
+  },
+  {
+    "name": "Infinity Network Solution",
+    "category": "frontend",
+    "description": "A professional IT service website built for an established Toronto-based company, showcasing their technology solutions, infrastructure optimization services, and 24/7 business support.",
+    "site": "https://infinitynetwork.com/",
+    "image": "infinity.png",
+    "alt": "Infinity Network – IT service provider website in Toronto"
+  },
+  {
+    "name": "Perry Business",
+    "category": "frontend",
+    "description": "A professional notary service website offering in-person and online notarization, loan signing, and real estate document support — designed for clients in San Antonio and beyond.",
+    "site": "https://perrybusinessservices.com/",
+    "image": "notarary.png",
+    "alt": "Notary service website for San Antonio offering online and in-person notarization"
+  },
+  {
+    "name": "Semi Conductors Chips LLC",
+    "category": "ecommerce",
+    "description": "A customized eCommerce website for semiconductor materials with product catalog and secure shopping features.",
+    "site": "https://semiconductorus.com/",
+    "image": "semiconductors.png",
+    "alt": "Customized semiconductor materials eCommerce website."
+  },
+  {
+    "name": "All Seven",
+    "category": "frontend",
+    "description": "A service website for immigration support featuring over 10 years of experience, multilingual assistance, and a fully functional contact form for client inquiries.",
+    "site": "https://all-seven3.org/",
+    "image": "visa.png",
+    "alt": "Immigration support service website with contact form."
+  },
+  {
+    "name": "Care Companion",
+    "category": "ecommerce",
+    "description": "An eCommerce website built with WooCommerce for a medical alert device company, offering products like safety bands, watches, and necklaces with 24/7 emergency monitoring.",
+    "site": "https://carecompanioco.com/",
+    "image": "care.png",
+    "alt": "Immigration support service website with contact form."
+  },
+  {
+    "name": "MANAKSH",
+    "category": "ecommerce",
+    "description": "A fully customized WordPress WooCommerce website using the WoodMart theme, featuring a shop and custom single product pages for a jewelry brand.",
+    "site": "https://manaksh.com/",
+    "image": "manaksh.png",
+    "alt": "Customized WooCommerce jewelry website with shop and product pages."
+  }
+]
