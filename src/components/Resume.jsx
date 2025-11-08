@@ -178,7 +178,7 @@ const Resume = () => {
             {/* Social Links */}
             <div className="flex justify-center space-x-6 mt-6">
               <a
-                href="https://www.linkedin.com/in/saam-sheron"
+                href="https://www.linkedin.com/in/arsalan-ahmed-215338230?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noopener noreferrer"
               >
