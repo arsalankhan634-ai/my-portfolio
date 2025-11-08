@@ -37,7 +37,7 @@ const HeroSection = () => {
             </p>
 
             <a
-              href="/Saam-Sheron-Software-dev.pdf"
+              href="/ArsalanAhmedResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-primary text-white rounded-lg shadow-md 
@@ -52,8 +52,8 @@ const HeroSection = () => {
           <div className="md:w-1/2 mt-8 md:mt-0">
             <img
               src={HeroImage}
-              alt="Saam Sheron - WordPress Developer"
-              title="Saam Sheron"
+              alt="Arsalan Ahmed - WordPress Developer"
+              title="Arsalan Ahmed"
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>

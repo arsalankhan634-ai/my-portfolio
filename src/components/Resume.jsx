@@ -161,7 +161,7 @@ const Resume = () => {
           <div className="w-full md:w-1/2 mt-8 md:mt-0 text-center sm:mb-0 mb-4">
             <img
               src={AboutImage}
-              alt="Saam Sheron"
+              alt="Arsalan Ahmed"
               className="rounded-full object-cover w-48 h-48 mx-auto mb-6 border-4 border-primary"
             />
             <p className="text-xl font-medium">Arsalan Ahmed</p>

@@ -48,7 +48,7 @@ const About = () => {
             <div className="rounded-full overflow-hidden shadow-xl">
               <img
                 src={AboutImage}
-                alt="Saam Sheron - Web Developer"
+                alt="Arsalan Ahmed - Web Developer"
                 className="w-48 h-48 rounded-full object-cover border-4 border-primary"
               />
             </div>

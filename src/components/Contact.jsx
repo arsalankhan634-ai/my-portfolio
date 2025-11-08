@@ -147,7 +147,7 @@ const Contact = () => {
           </p>
           <p className="mt-4">
             <a
-              href="/Saam-Sheron-Software-dev.pdf"
+              href="/ArsalanAhmedResume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-lg text-primary underline hover:text-secondary transition duration-300"

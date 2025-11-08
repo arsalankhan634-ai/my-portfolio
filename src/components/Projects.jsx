@@ -1,15 +1,13 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import getImgUrl from "../utils/getImgUrl";
 
 const Projects = () => {
   const [projectsData, setProjectsData] = useState([]);
   const [filteredProjects, setFilteredProjects] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const projectsRef = useRef();
-  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Fetch projects data
+    // Fetch the projects data from the JSON file
     fetch("/projects.json")
       .then((response) => response.json())
       .then((data) => {
@@ -19,32 +17,7 @@ const Projects = () => {
       .catch((error) => console.error("Error fetching projects data:", error));
   }, []);
 
-  // Intersection Observer to detect when section is in viewport
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsVisible(true);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    if (projectsRef.current) {
-      observer.observe(projectsRef.current);
-    }
-
-    return () => {
-      if (projectsRef.current) {
-        observer.unobserve(projectsRef.current);
-      }
-    };
-  }, []);
-
-  // Filter projects
+  // Filter projects based on selected category
   const filterProjects = (category) => {
     setSelectedCategory(category);
     if (category === "all") {
@@ -57,13 +30,7 @@ const Projects = () => {
   };
 
   return (
-    <section
-      id="projects"
-      ref={projectsRef}
-      className={`py-16 bg-lightgray transition-opacity duration-1000 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
-    >
+    <section id="projects" className="py-16 bg-lightgray">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-10 text-primary">
           My Projects
@@ -77,8 +44,7 @@ const Projects = () => {
                 ? "bg-primary text-white"
                 : "bg-white text-primary"
             }`}
-            onClick={() => filterProjects("all")}
-          >
+            onClick={() => filterProjects("all")}>
             All Projects
           </button>
           <button
@@ -87,10 +53,36 @@ const Projects = () => {
                 ? "bg-primary text-white"
                 : "bg-white text-primary"
             }`}
-            onClick={() => filterProjects("ecommerce")}
-          >
+            onClick={() => filterProjects("ecommerce")}>
             E-commerce
           </button>
+          {/* <button
+            className={`px-6 py-2 mx-2 rounded ${
+              selectedCategory === "fullStack"
+                ? "bg-primary text-white"
+                : "bg-white text-primary"
+            }`}
+            onClick={() => filterProjects("fullStack")}>
+            Full Stack
+          </button> */}
+          {/* <button
+            className={`px-6 py-2 mx-2 rounded ${
+              selectedCategory === "backend"
+                ? "bg-primary text-white"
+                : "bg-white text-primary"
+            }`}
+            onClick={() => filterProjects("backend")}>
+            Backend
+          </button> */}
+          {/* <button
+            className={`px-6 py-2 mx-2 rounded ${
+              selectedCategory === "uiUX"
+                ? "bg-primary text-white"
+                : "bg-white text-primary"
+            }`}
+            onClick={() => filterProjects("uiUX")}>
+            UI/UX
+          </button> */}
         </div>
 
         {/* Projects */}
@@ -98,8 +90,7 @@ const Projects = () => {
           {filteredProjects.map((project) => (
             <div
               key={project.name}
-              className="project-card bg-white shadow-lg rounded-lg overflow-hidden"
-            >
+              className="project-card bg-white shadow-lg rounded-lg overflow-hidden">
               <img
                 src={getImgUrl(project.image)}
                 alt={project.alt}
@@ -117,11 +108,17 @@ const Projects = () => {
                       href={project.site}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-primary font-semibold"
-                    >
+                      className="text-primary font-semibold">
                       Live Demo
                     </a>
                   )}
+                  {/* <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-primary font-semibold">
+                    GitHub
+                  </a> */}
                 </div>
               </div>
             </div>
